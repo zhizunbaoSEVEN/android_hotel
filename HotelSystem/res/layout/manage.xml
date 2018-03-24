@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<LinearLayout
+	android:id="@+id/tab1"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+>
+<TableLayout
+   	android:orientation="vertical"
+   	android:layout_width="fill_parent"
+   	android:layout_height="fill_parent">
+   	<TableRow>
+		<TextView
+			android:id="@+id/name"
+			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:text="@string/name"/>
+  		<EditText
+	 		android:id="@+id/nameEditText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</TableRow>
+	<TableRow>
+		<TextView
+			android:id="@+id/sex"
+			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:text="@string/sex"/>
+		<RadioGroup
+			android:id="@+id/radioGroup"
+			android:orientation="horizontal">
+			<RadioButton
+				android:id="@+id/man"
+				android:layout_width="wrap_content"
+   				android:layout_height="wrap_content"
+   				android:text="@string/man"
+   				android:checked="true"/>
+  			<RadioButton
+				android:id="@+id/woman"
+				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content"
+  				android:text="@string/woman"/>
+		</RadioGroup>
+	</TableRow>	
+	<TableRow>
+		<TextView
+			android:id="@+id/idCardTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/idCard"/>
+  		<EditText
+  			android:id="@+id/idCardEditText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</TableRow>	
+	<TableRow>
+		<TextView
+			android:id="@+id/timeInTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/timeIn"/>
+	 	<EditText
+	 		android:id="@+id/timeInEditText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</TableRow>
+	<TableRow>
+		<TextView
+			android:id="@+id/timeSumTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/timeSum"/>
+	 	<EditText
+	 		android:id="@+id/timeSumEditText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</TableRow>	
+	<TableRow>
+		<TextView
+			android:id="@+id/roomNumTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/roomNum"/>
+	 	<EditText
+	 		android:id="@+id/roomNumEditText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</TableRow>	
+	<TableRow>
+		<TextView
+			android:id="@+id/moneyTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/money"/>
+	 	<EditText
+	 		android:id="@+id/moneyEditText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</TableRow>	
+	<TableRow>
+		<Button
+			android:id="@+id/btn01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="提交"/>
+		<Button
+			android:id="@+id/btn02"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="刷新"/>
+</TableRow>
+</TableLayout>
+</LinearLayout>
+<LinearLayout
+	android:id="@+id/tab2"
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/searchTestView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="　房间号："/>
+		<EditText
+			android:id="@+id/searchEditText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:hint="请输入房间号..."/>
+		<Button
+			android:id="@+id/searchBtn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:hint="查询"/>
+		</LinearLayout>
+		<TextView
+			android:id="@+id/resultTestView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/> 
+</LinearLayout>
+
+<LinearLayout
+	android:id="@+id/tab3"
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	<LinearLayout
+	 	android:orientation="horizontal"
+	 	android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/dropUsernameText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="用户名："/>
+		<EditText
+			android:id="@+id/dropUsernameEditText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:hint="请输入用户名："/>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/dropRoomNumText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="房间号："/>
+		<EditText
+			android:id="@+id/dropRoomNumEditText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:hint="请输入房间号："/>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<Button 
+			android:id="@+id/dropBtn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="退房"/>
+	</LinearLayout>
+</LinearLayout>
+
+<LinearLayout 
+    android:id="@+id/tab4"
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">  
+    <Button
+        android:id="@+id/refreshbtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="刷新" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/show"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+    
+</LinearLayout>
+</TabHost>

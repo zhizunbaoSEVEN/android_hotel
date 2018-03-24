@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TableLayout
+   	android:orientation="vertical"
+   	android:layout_width="fill_parent"
+   	android:layout_height="fill_parent">
+   	<TableRow>
+		<TextView
+			android:id="@+id/titleId"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="注册"
+		/>
+	</TableRow>	
+	<TableRow>
+	<TextView
+		android:id="@+id/usernameTextView"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/username"
+	/>
+	<EditText
+		android:id="@+id/usernameEditText"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:maxLength="40"
+		android:hint="请输入用户名..."
+	/>
+	</TableRow>
+	<TableRow>
+	<TextView
+		android:id="@+id/pwdTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/pwd"
+	/>
+	<EditText
+		android:id="@+id/pwdEditText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:hint="请输入密码..."
+	/>
+	</TableRow>
+	
+	<TableRow>
+	<Button 
+		android:id="@+id/registerBtn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/register"
+	/>
+	<Button 
+		android:id="@+id/cancelBtn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/cancel"
+	/>
+	</TableRow>
+</TableLayout>
+</LinearLayout>
